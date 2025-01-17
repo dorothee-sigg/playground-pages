@@ -1,10 +1,19 @@
+---
+layout: default
+---
 <section class="constrain hero">
-    <p>This is a sample page to demonstrate how new cases can be added. It works via Staticman.</p>
+    <p>This is a sample page to demonstrate how <a href="https://staticman.net">Staticman</a> can be used to integrate user-generated content into a static site. When a movie review is submitted, the data is sent to the Staticman API via Ajax, which will push it to <a href="https://github.com/eduardoboucas/popcorn">the GitHub repository</a> and cause a regeneration of the Jekyll site.</p>
+    <h6>You can fork this repository and use it as a starting point to create your own Staticman integration.</h6>
   </section>
 
   <section class="constrain">
-    <h3>Submit a new case</h3>
+    <h3>Write a review</h3>
     {% include newcases.html %}
   </section>
   
+  <section class="constrain">
+    <h3>All reviews</h3>
+
+    {% include cases.html %}
+  </section>
 </div>
